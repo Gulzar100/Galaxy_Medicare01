@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy Medicare</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f5f5dc;
+            color: #4b3832;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4b3832;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 2em;
+            text-transform: uppercase;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #4b3832;
+            border-bottom: 2px solid #4b3832;
+            padding-bottom: 5px;
+        }
+
+        .order input, .order textarea, .order button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #4b3832;
+            border-radius: 5px;
+        }
+
+        .order button {
+            background-color: #4b3832;
+            color: #fff;
+            font-size: 1em;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        .order button:hover {
+            background-color: #6b5249;
+        }
+
+        footer {
+            background-color: #4b3832;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        a {
+            color: #6b5249;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .about {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        .about img {
+            max-width: 300px;
+        }
+
+        .about p {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Galaxy Medicare
+    </header>
+
+    <div class="container">
+        <!-- About Us Section -->
+        <div class="section about">
+            <img src="gm.png" alt="About Galaxy Medicare">
+            <div>
+                <h2>About Us</h2>
+                <p>Welcome to Galaxy Medicare, where health meets convenience. We are a trusted medical store dedicated to providing high-quality medicines and health products to our valued customers. Our goal is to make healthcare accessible, reliable, and stress-free.</p>
+                <p>At Galaxy Medicare, you will find a wide variety of medicines, over-the-counter drugs, wellness products, and expert consultation services. We collaborate with top pharmaceutical brands to ensure authenticity and safety in every product. Whether you need a quick refill or a detailed prescription, we’re here to serve you.</p>
+                <p>Our services include easy online ordering, fast doorstep delivery, and in-store assistance with a smile. The store's vintage-inspired design creates a warm and welcoming atmosphere, bridging the charm of tradition with the ease of modern technology. Galaxy Medicare is more than just a pharmacy – it’s a place where your health is our priority.</p>
+                <p>Thank you for choosing Galaxy Medicare, where your health and satisfaction come first!</p>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="section contact">
+            <h2>Contact Us</h2>
+            <p>For inquiries, call us at: <strong><a href="tel:+919049795886">+91 90497 95886</a></strong></p>
+            <p>Email us at: <strong><a href="mailto:aligulzar0907@gmail.com">info@galaxymedicare.com</a></strong></p>
+        </div>
+
+        <!-- Location Section -->
+        <div class="section location">
+            <h2>Our Location</h2>
+            <p>Visit us at:</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d232.50869360837527!2d79.13822824155807!3d21.186632603108237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c70004c8875b%3A0x9f2b81aeae1515f6!2sGalaxy%20Medicare%20Medical%20store!5e0!3m2!1sen!2sin!4v1735640146641!5m2!1sen!2sin"
+            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <!-- Order Medicine Section -->
+        <div class="section order">
+            <h2>Order Medicines</h2>
+            <form action="https://formspree.io/f//xyzzdbvp" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="text" name="phone" placeholder="Your Phone Number" required>
+                <textarea name="order" rows="5" placeholder="List the medicines you need" required></textarea>
+                <button type="submit">Place Order</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Galaxy Medicare. All rights reserved.
+    </footer>
+</body>
+</html>
